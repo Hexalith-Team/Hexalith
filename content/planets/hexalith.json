@@ -1,0 +1,138 @@
+generator: "PlanetGenerator"
+Name: "Hexalith"
+solarSystem: sun
+parent: sun
+iconColor: 9da2ec
+orbitRadius: 110
+atmosphereRadIn: 0,
+atmosphereRadOut: 0.25,
+atmosphereColor: 7d80aa,
+defaltCore: "core_fralion"
+bloom: true
+startSector: 1
+sectorSize: 2
+launchCandidates: []
+landCloudColor: 364062
+
+allowLaunchSchematics: false
+allowLaunchToNumbered: false  
+drawOrbit: true
+updateLighting: true
+bloom: true
+visible: true
+hasAtmosphere: true
+allowWaveSimulation: true
+clearSectorOnLose: true
+allowWaves: true
+prebuildBase: true
+alwaysUnlocked: true
+orbitSpacing: 10
+
+cloudMesh: [
+{
+  type: HexSkyMesh
+  planet: hexalith
+  seed: 5345
+  speed: 2.5
+  radius: 0.05
+  divisions: 5
+  color: 364062
+  octaves: 2
+  persistence: 2.5
+  scl: 0.25
+  thresh: 0.2
+}
+{
+  type: HexSkyMesh
+  planet: hexalith
+  seed: 52
+  speed: 2
+  radius: 0.1
+  divisions: 5
+  color: 9da2ec
+  octaves: 2
+  persistence: 5
+  scl: 0.25
+  thresh: 0.3
+}
+{
+  type: HexSkyMesh
+  planet: hexalith
+  seed: 123
+  speed: 1
+  radius: 0.15
+  divisions: 5
+  color: 858bd9
+  octaves: 2
+  persistence: 10
+  scl: 0.25
+  thresh: 0.4
+}
+
+]
+mesh: [
+{
+	type: NoiseMesh
+	planet: hexalith
+	seed: 654
+	color1: 46A79C
+	color2: 46A79C
+	divisions: 5
+	radius: 0.8
+	octaves: 3
+	persistence: 2
+	scl: 1.2
+	mag: 2.4
+}
+{
+	type: NoiseMesh
+	planet: hexalith
+	bloom: true
+	seed: 123
+	color1: 4C1415
+	color2: 4C1415
+	divisions: 4.75
+	radius: 0.76
+	octaves: 2.5
+	persistence: 1.75
+	scl: 1.2
+	mag: 2.4
+}
+{
+	type: NoiseMesh
+	planet: hexalith
+	seed: 334
+	color1: AC7130
+	color2: AC7130
+	divisions: 4.5
+	radius: 0.8
+	octaves: 2.25
+	persistence: 1.5
+	scl: 1.2
+	mag: 2.4
+}
+]
+hiddenItems: [
+    "copper"
+    "lead"
+    "scrap"
+    "graphite"
+    "coal"
+    "titanium"
+    "thorium"
+    "silicon"
+    "plastanium"
+    "phase-fabric"
+    "sand"
+    "surge-alloy"
+    "spore-pod"
+    "blast-compound"
+    "pyratite"
+    "metaglass"
+    "beryllium"
+    "oxide"
+    "tungsten"
+    "carbide"
+    "fissile-matter"
+    "dormant-cyst"
+]
