@@ -1,0 +1,6 @@
+name: hexalith
+displayName: Hexalith
+author: Hexalith Team
+version: "1.0.0"
+minGameVersion: "149"
+dependencies: [ ]
